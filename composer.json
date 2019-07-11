@@ -1,29 +1,34 @@
 {
-    "name": "Jawaraegov/laravel-api-managers",
+    "name": "jawaraegov/laravel-api-managers",
     "description": "Api Manager untuk aplikasi Bantenprov",
     "type": "library",
+	"homepage": "https://github.com/etanasia/laravel-api-managers",
     "license": "MIT",
     "authors": [
         {
             "name": "etanasia",
-            "email": "unme.loved@gmail.com"
+            "email": "unme.loved@gmail.com",
+			"role": "developer"
         }
     ],
-      "autoload": {
+    "autoload": {
       "psr-4": {
         "Jawaraegov\\LaravelApiManagers\\": "src"
-    }
-  },
-  "minimum-stability": "dev",
-      "require": {
-                  "illuminate/support": "~5.1",
-                  "php" : "~5.6|~7.0",
-                  "guzzlehttp/guzzle": "^6.3",
-                  "that0n3guy/transliteration": "2.0.x",
-                  "Jawaraegov/workflows" : "dev-dev"
-                  },
-       "require-dev": {
-                  "phpunit/phpunit" : ">=5.4.3",
-                  "squizlabs/php_codesniffer": "^2.3"
+	  }
+	},
+	"support": {
+		"source": "https://github.com/etanasia/laravel-api-managers"
+	},
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : "~5.6|~7.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "that0n3guy/transliteration": "2.0.x",
+        "jawaraegov/workflows" : "dev-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : ">=5.4.3",
+        "squizlabs/php_codesniffer": "^2.3"
     }
 }
