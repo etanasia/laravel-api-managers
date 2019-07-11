@@ -14,6 +14,7 @@ update pull
 > - Package ini masih dalam tahap pengembangan.
 > - package ini di gunakan untuk mengelola API KEY Provinsi Banten.
 > - Package ini untuk laravel 5.4 keatas.
+> - Install Package [Wokrflow managment](https://github.com/etanasia/workflows) sebelum menginstall package ini.
 
 ## Workflow
 API Key Management ini dilengkapi dengan workflow management yang digunakan untuk melakukan proses permintaan sampai persetujuan API Key. See [Wokrflow managment](https://github.com/etanasia/workflows)
