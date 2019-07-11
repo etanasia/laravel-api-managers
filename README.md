@@ -1,8 +1,8 @@
 Welcome to Jawaraegov/laravel-api-managers!
 ===================
-[![codecov](https://codecov.io/gh/Jawaraegov/laravel-api-managers/branch/master/graph/badge.svg)](https://codecov.io/gh/Jawaraegov/laravel-api-managers)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Jawaraegov/laravel-api-managers/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Jawaraegov/laravel-api-managers/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/Jawaraegov/laravel-api-managers/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Jawaraegov/laravel-api-managers/build-status/master)
+[![codecov](https://codecov.io/gh/etanasia/laravel-api-managers/branch/master/graph/badge.svg)](https://codecov.io/gh/etanasia/laravel-api-managers)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/etanasia/laravel-api-managers/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/etanasia/laravel-api-managers/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/etanasia/laravel-api-managers/badges/build.png?b=master)](https://scrutinizer-ci.com/g/etanasia/laravel-api-managers/build-status/master)
 
 Documents
 -------------
