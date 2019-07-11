@@ -43,7 +43,7 @@ API Key Management ini dilengkapi dengan workflow management yang digunakan untu
 #### <i class="icon-file"></i> Install package
 
 ```sh
-$ composer require Jawaraegov/laravel-api-managers:dev-master
+$ composer require jawaraegov/laravel-api-managers:dev-master
 ```
 #### <i class="icon-file"></i> edit file config/app.php
 
