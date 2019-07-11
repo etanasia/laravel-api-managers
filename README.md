@@ -1,6 +1,5 @@
 Welcome to Jawaraegov/laravel-api-managers!
 ===================
-[![codecov](https://codecov.io/gh/etanasia/laravel-api-managers/branch/master/graph/badge.svg)](https://codecov.io/gh/etanasia/laravel-api-managers)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/etanasia/laravel-api-managers/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/etanasia/laravel-api-managers/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/etanasia/laravel-api-managers/badges/build.png?b=master)](https://scrutinizer-ci.com/g/etanasia/laravel-api-managers/build-status/master)
 
@@ -14,10 +13,10 @@ update pull
 
 > - Package ini masih dalam tahap pengembangan.
 > - package ini di gunakan untuk mengelola API KEY Provinsi Banten.
-> - Package ini untuk laravel 4.2 keatas.
+> - Package ini untuk laravel 5.4 keatas.
 
 ## Workflow
-API Key Management ini dilengkapi dengan workflow management yang digunakan untuk melakukan proses permintaan sampai persetujuan API Key
+API Key Management ini dilengkapi dengan workflow management yang digunakan untuk melakukan proses permintaan sampai persetujuan API Key. See [Wokrflow managment](https://github.com/etanasia/workflows)
 
 ### Workflow State
 > - Propose
