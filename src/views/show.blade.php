@@ -178,7 +178,7 @@
 </div>
 <script type="text/javascript">
   function transisi(clients, requests) {
-    var base_url = "{{ url('/') }}";
+	var base_url = location.protocol+"{{ str_replace('https:','',str_replace('http:','',url('/'))) }}";
     var a = confirm("Are You sure You want to "+requests+"?");
     if(a == true){
       $.ajax({
