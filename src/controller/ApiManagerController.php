@@ -68,7 +68,7 @@ class ApiManagerController extends Controller
                   ->withInput();
       	}
         if(Auth::guest()){ $current_user = 1; }
-        else{ $current_user = Auth::user()->id; }
+        else{ $current_user = (Auth::user())?((Auth::user()->id)?Auth::user()->id:1):1; }
 
         try {
             $token 		= $this->token();
@@ -203,7 +203,7 @@ class ApiManagerController extends Controller
     private function saveHistory($api, $workflow, $statesFrom, $statesTo, $user_id = ""){
 		if(Auth::guest()){ $current_user = 1; }
 		else{
-			if($user_id == ""){ $current_user = Auth::user()->id; }
+			if($user_id == ""){ $current_user = (Auth::user())?((Auth::user()->id)?Auth::user()->id:1):1; }
 			else { $current_user = $user_id; }
 		}
     	$history = New History;
@@ -483,7 +483,7 @@ class ApiManagerController extends Controller
 			));
     	}
       if(Auth::guest()){ $current_user = 1; }
-      else{ $current_user = Auth::user()->id; }
+      else{ $current_user = (Auth::user())?((Auth::user()->id)?Auth::user()->id:1):1; }
 
       try {
           $client 			= str_replace(array('https://', 'http://'), array('',''),$request->input('client'));
@@ -634,7 +634,7 @@ class ApiManagerController extends Controller
 
     private function SendClient($client, $host, $error, $statusCode, $title, $type, $message, $result, $state, $transition){
         if(Auth::guest()){ $current_user = 1; }
-        else{ $current_user = Auth::user()->id; }
+        else{ $current_user = (Auth::user())?((Auth::user()->id)?Auth::user()->id:1):1; }
         if($state == 'Approved'){
           $apikey = $result->api_key;
         }else{
@@ -655,6 +655,8 @@ class ApiManagerController extends Controller
           'user_id' => $current_user
         ];
         $body = json_encode($data);
+		$host = explode(':',$host);
+		$host = $host[0];
 
         try {
             $urlget = "https://".$client."/api/v1/host-keys/".$host."/get";
@@ -776,7 +778,7 @@ class ApiManagerController extends Controller
 
     private function send_apimanager($url_apimanager,$client,$host,$keterangan,$apikey=""){
         if(Auth::guest()){ $current_user = 1; }
-        else{ $current_user = Auth::user()->id; }
+        else{ $current_user = (Auth::user())?((Auth::user()->id)?Auth::user()->id:1):1; }
         $headers = ['Content-Type' => 'application/json'];
         $host       = str_replace(array('https://', 'http://'), array('',''),$host);
         $client       = str_replace(array('https://', 'http://'), array('',''),$client);

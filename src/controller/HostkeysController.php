@@ -166,7 +166,7 @@ class HostkeysController extends Controller
                 ->withInput();
       }
       if(Auth::guest()){ $current_user = 1; }
-      else{ $current_user = Auth::user()->id; }
+      else{ $current_user = (Auth::user())?((Auth::user()->id)?Auth::user()->id:1):1; }
       $headers = ['Content-Type' => 'application/json'];
       $data = [
         'host' => $request->host,

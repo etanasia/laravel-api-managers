@@ -39,17 +39,17 @@
                       @if($histories->getStateFrom->label == "Propose" && $histories->getStateTo->label == "Request")
                         @if($keys->from == "Request" || $keys->from == "request")
                           @if($keys->to == "Approved" || $keys->to == "approved")
-                            <div class="col-lg-4 row">
+                            <div class="col-lg-4">
                               <span class="btn btn-success" onclick="transisi('{{$histories->getApiKeys->client}}', '{{$keys->to}}')">{{$keys->label}}</span>
                             </div>
                           @endif
                           @if($keys->to == "Rejected" || $keys->to == "rejected")
-                            <div class="col-lg-4 row">
+                            <div class="col-lg-4">
                               <span class="btn btn-danger" onclick="transisi('{{$histories->getApiKeys->client}}', '{{$keys->to}}')">{{$keys->label}}</span>
                             </div>
                           @endif                          
                           @if($keys->to == "Needs Completed Document" || $keys->to == "needs completed document")
-                            <div class="col-lg-4 row">
+                            <div class="col-lg-4">
                               <span class="btn btn-info" onclick="transisi('{{$histories->getApiKeys->client}}', '{{$keys->to}}')">{{$keys->label}}</span>
                             </div>
                           @endif
@@ -61,7 +61,7 @@
                       @if($histories->getStateFrom->label == "Request" && $histories->getStateTo->label == "Needs Completed Document")
                         @if($keys->from == "Needs Completed Document" || $keys->from == "needs completed document")
                           @if($keys->to == "Document Submitted" || $keys->to == "document submitted")
-                            <div class="col-lg-4 row">
+                            <div class="col-lg-4">
                               <span class="btn btn-primary" onclick="transisi('{{$histories->getApiKeys->client}}', '{{$keys->to}}')">{{$keys->label}}</span>
                             </div>
                           @endif
@@ -73,12 +73,12 @@
                       @if($histories->getStateFrom->label == "Needs Completed Document" && $histories->getStateTo->label == "Document Submitted")
                         @if($keys->from == "Document Submitted" || $keys->from == "document submitted")
                           @if($keys->to == "Approved" || $keys->to == "approved")
-                            <div class="col-lg-4 row">
+                            <div class="col-lg-4">
                               <span class="btn btn-success" onclick="transisi('{{$histories->getApiKeys->client}}', '{{$keys->to}}')">{{$keys->label}}</span>
                             </div>
                           @endif
                           @if($keys->to == "Rejected" || $keys->to == "rejected")
-                            <div class="col-lg-4 row">
+                            <div class="col-lg-4">
                               <span class="btn btn-danger" onclick="transisi('{{$histories->getApiKeys->client}}', '{{$keys->to}}')">{{$keys->label}}</span>
                             </div>
                           @endif
@@ -90,7 +90,7 @@
                       @if($histories->getStateFrom->label == "Request" && $histories->getStateTo->label == "Approved" || $histories->getStateFrom->label == "Document Submitted" && $histories->getStateTo->label == "Approved" || $histories->getStateFrom->label == "Rejected" && $histories->getStateTo->label == "Approved")
                         @if($keys->from == "Approved" || $keys->from == "approved")
                           @if($keys->to == "Rejected" || $keys->to == "rejected")
-                            <div class="col-lg-4 row">
+                            <div class="col-lg-4">
                               <span class="btn btn-danger" onclick="transisi('{{$histories->getApiKeys->client}}', '{{$keys->to}}')">{{$keys->label}}</span>
                             </div>
                           @endif
@@ -102,7 +102,7 @@
                       @if($histories->getStateFrom->label == "Request" && $histories->getStateTo->label == "Rejected" || $histories->getStateFrom->label == "Document Submitted" && $histories->getStateTo->label == "Rejected" || $histories->getStateFrom->label == "Approved" && $histories->getStateTo->label == "Rejected")
                         @if($keys->from == "Rejected" || $keys->from == "rejected")
                           @if($keys->to == "Approved" || $keys->to == "approved")
-                            <div class="col-lg-4 row">
+                            <div class="col-lg-4">
                               <span class="btn btn-success" onclick="transisi('{{$histories->getApiKeys->client}}', '{{$keys->to}}')">{{$keys->label}}</span>
                             </div>
                           @endif
@@ -114,7 +114,7 @@
                   </div>
                 </div>
 
-                <div class="table-responsive">
+                <div class="col-lg-12 table-responsive">
                     <table class="table table-bordered table-hover">
                         <tr>
                             <th style="width: 10px">#</th>
